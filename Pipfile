@@ -16,6 +16,9 @@ django-cors-headers = "*"
 gunicorn = "*"
 django-heroku = "*"
 django-rest-api = "*"
+django-http = "*"
+djanjo-urls = "*"
+django-contrib = "*"
 
 [requires]
 python_version = "3.7"
