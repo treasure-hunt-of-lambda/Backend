@@ -14,3 +14,9 @@ from .serializers import RoomSerializer, PlayerSerializer
 
 def index(request):
     return HttpResponse("Hello, world. You're at the adv_room index.")
+
+def room_view(APIView):
+    return HttpResponse('Room_view')
+
+def player_view(APIView):
+    return HttpResponse('Player_view')
