@@ -7,6 +7,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.generics import get_object_or_404
 from django.http import Http404
+from django.views import View
 
 from .models import Room, Player
 from .serializers import RoomSerializer, PlayerSerializer
@@ -15,8 +16,14 @@ from .serializers import RoomSerializer, PlayerSerializer
 def index(request):
     return HttpResponse("Hello, world. You're at the adv_room index.")
 
-def room_view(request):
-    return HttpResponse('Hello Room_view')
+class room_view(View):
+    def get_msg_room(self, request):
+        return HttpResponse('result')
+    
+    def get_rooms(self,request):
+        pass
 
-def player_view(request):
-    return HttpResponse(' Hello Player_view')
+class player_view(View):
+    def get_msg_player(self, request):
+        return HttpResponse('player result')
+
