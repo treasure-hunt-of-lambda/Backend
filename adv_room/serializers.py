@@ -6,7 +6,7 @@ class RoomSerializer (serializers.ModelSerializer):
         model = Room
         exclude=("id")
 
-class PLayerSerializer(serializers.ModelSerializer):
+class PlayerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Player
         fields = '__all__'
