@@ -19,6 +19,7 @@ django-rest-api = "*"
 django-http = "*"
 djanjo-urls = "*"
 django-contrib = "*"
+rest-framwork = "*"
 
 [requires]
 python_version = "3.7"

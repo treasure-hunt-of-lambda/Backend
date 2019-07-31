@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 # // Starting room
 # {
@@ -27,6 +28,7 @@ class Room (models.Model):
     exitW = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    items = models.CharField(max_length=255, null=True)
     # cooldown = models.IntegerField()
     # elevation = models.IntegerField(null=True)
     # terrain = models.CharField(max_length=255, blank=True)
