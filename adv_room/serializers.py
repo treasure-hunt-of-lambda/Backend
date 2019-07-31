@@ -4,7 +4,7 @@ from .models import Room, Player
 class RoomSerializer (serializers.ModelSerializer):
     class Meta:
         model = Room
-        exclude=("id")
+        fields = '__all__'
 
 class PlayerSerializer(serializers.ModelSerializer):
     class Meta:
