@@ -65,16 +65,16 @@ def status():
         
     
 
+print(status().json())
+# traversalPath = []
 
-traversalPath = []
-
-graph_rooms = {}
-moves = ['n', 's', 'e', 'w']
-opposite_directions = {'n': 's', 's': 'n', 'w': 'e', 'e': 'w'}
+# graph_rooms = {}
+# moves = ['n', 's', 'e', 'w']
+# opposite_directions = {'n': 's', 's': 'n', 'w': 'e', 'e': 'w'}
 
 # initialize = init().json()
 
-# print(initialize['room_id'])
+# # print(initialize['room_id'])
 
 # player['current_room'] = initialize['room_id']
 # player['exits'] = initialize['exits']
@@ -90,33 +90,11 @@ opposite_directions = {'n': 's', 's': 'n', 'w': 'e', 'e': 'w'}
 #         graph_rooms[player['current_room']] = {}
 #         for exit in player['exits']:
 #             graph_rooms[player['current_room']][exit] = '?'
-#             # print(graph_rooms[player['current_room']][exit])
+            # print(graph_rooms[player['current_room']][exit])
 
 
 
-# mapTraversal(player, move='')
-# print(move_player('n').json())
-# print(move_player('e').json())
-# print(move_player('s').json())
-# print(move_player('w').json())
-# print(sell_item('great treasure').json())
-# print(status().json())
 
-# print(initialize)
-# print(move_player('s').json())
-# print(move_player('e').json())
-# print(move_player('e').json())
-# print(move_player('s').json())
-# print(move_player('e').json())
-# print(move_player('e').json())
-# print(move_player('e').json())
-# print(move_player('s').json())
-# print(move_player('s').json())
-# print(move_player('s').json())
-# print(move_player('s').json())
-# print(move_player('s').json())
-# print(move_player('s').json())
-# print(name_change('stuck_on_map_traversal'))
 
 
 
