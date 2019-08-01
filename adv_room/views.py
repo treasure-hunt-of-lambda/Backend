@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.template import loader
 
 
 from rest_framework import status, generics
@@ -14,7 +15,16 @@ from .serializers import RoomSerializer, PlayerSerializer
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the adv_room index.")
+    player_detail = Player.objects
+    template = loader.get_template('adv_room/index.html')
+    context = {
+        'player_detail': player_detail,
+    }
+    return HttpResponse(player_detail)
+
+    # latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    # output = ', '.join([q.question_text for q in latest_question_list])
+    # return HttpResponse(output)
 
 class room_view(generics.ListCreateAPIView):
     queryset = Room.objects.all().order_by('id')
