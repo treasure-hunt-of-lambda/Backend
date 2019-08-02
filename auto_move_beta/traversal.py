@@ -3,10 +3,11 @@ import requests
 import json
 import time
 import os
-
+import random
+# from queue import Queue
 
 #Lambda Server Url
-my_key = '7d6fdac551c4a8667047bc1eb7250d86c4163c01'
+my_key = 'd4bd4d2ca313d3c704b851ece19ecfcf72984f1b'
 url = "https://lambda-treasure-hunt.herokuapp.com/api/adv"
 headers = {"content-type": "application/json", "Authorization": f"Token {my_key}"}
 cooldown = 0
@@ -28,10 +29,19 @@ cooldown = 0
 #     player_init = requests.get(f"{ url }/init", headers=headers)
 #     return player_init.json()
 
+<<<<<<< HEAD:auto_move_beta/traversal.py
+def move_player(direction):
+    move = requests.post(f"{ url }/move", json={"direction": direction}, headers=headers)
+    data = move.json()
+    print(data)
+    time.sleep(data["cooldown"])
+    return  data
+=======
 
 # def move_player(direction):
 #     move = requests.post(f"{ url }/move", json={"direction": direction}, headers=headers)
 #     return move.json()
+>>>>>>> master:traversal.py
 
 # def take_treasure():
 #     pass
@@ -174,3 +184,11 @@ with open('map.json', 'w', encoding='utf-8') as f:
 
 # curl -X POST -H 'Authorization: Token 7a375b52bdc410eebbc878ed3e58b2e94a8cb607' -H "Content-Type: application/json" -d '{"name":"shiny treasure"}' https://lambda-treasure-hunt.herokuapp.com/api/adv/take/
 
+<<<<<<< HEAD:auto_move_beta/traversal.py
+
+
+print(move_player('n'))
+
+
+=======
+>>>>>>> master:traversal.py

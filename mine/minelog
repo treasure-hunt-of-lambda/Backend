@@ -1,0 +1,22 @@
+(Backend) bash-3.2$ python mine2.py
+Searching for next proof
+Proof found: 1
+{'cooldown': 5.581667, 'errors': ['Cooldown Violation: +5s CD']}
+Searching for next proof
+Proof found: 22
+{'cooldown': 5.588633, 'errors': ['Cooldown Violation: +5s CD']}
+Searching for next proof
+Proof found: 11
+{'cooldown': 5.606664, 'errors': ['Cooldown Violation: +5s CD']}
+Searching for next proof
+Proof found: 1225703
+{'cooldown': 5.590662, 'errors': ['Cooldown Violation: +5s CD']}
+Searching for next proof
+Proof found: 18
+{'cooldown': 5.647591, 'errors': ['Cooldown Violation: +5s CD']}
+Searching for next proof
+Proof found: 8
+{'cooldown': 13.736992, 'errors': ['Cooldown Violation: +5s CD']}
+Searching for next proof
+Proof found: 134990561
+{'cooldown': 60.0, 'errors': ['Invalid proof: +30s CD']}

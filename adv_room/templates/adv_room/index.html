@@ -1,0 +1,9 @@
+{% if player_detail %}
+    <ul>
+    {% for object in player_detail %}
+        <li><a href="/adv_room/ player.id }}/">{{ object.object_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
